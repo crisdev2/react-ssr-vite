@@ -1,0 +1,63 @@
+{
+  "id": 1,
+  "type": "section",
+  "title": "Vite cool page",
+  "content": [
+    {
+      "id": 100,
+      "type": "block",
+      "title": "My First Block",
+      "block": {
+        "content": "<p>Here is the block content...</p>"
+      }
+    },
+    {
+      "id": 101,
+      "type": "slider",
+      "title": "My First Slider",
+      "slider": {
+        "items": [
+          {
+            "id": 201,
+            "title": "Thor",
+            "image": "https://i.imgur.com/TNrsYUE.jpeg"
+          },
+          {
+            "id": 202,
+            "title": "Hulk",
+            "image": "https://i.imgur.com/EvtpCYz.jpeg"
+          },
+          {
+            "id": 203,
+            "title": "Sartlord",
+            "image": "https://i.imgur.com/aF0pPdU.jpeg"
+          },
+          {
+            "id": 205,
+            "title": "Captain America",
+            "image": "https://i.imgur.com/2eKgPN6.jpeg"
+          }
+        ]
+      }
+    }
+  ],
+  "footer": {
+    "links": [
+      {
+        "id": 301,
+        "title": "Help",
+        "href": "/help"
+      },
+      {
+        "id": 302,
+        "title": "About Us",
+        "href": "/about-us"
+      },
+      {
+        "id": 302,
+        "title": "Terms and Conditions",
+        "href": "/terms"
+      }
+    ]
+  }
+}

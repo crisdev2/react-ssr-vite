@@ -1,8 +1,7 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import logo from './logo.svg'
-import { PageContextProvider } from './usePageContext'
+import { CustomPageContext, PageContextProvider } from './usePageContext'
 import type { PageContext } from './types'
-import './PageShell.css'
 import { Link } from './Link'
 import { StylesProvider, ThemeProvider as MuiThemeProvider } from '@material-ui/styles'
 import { CssBaseline, useMediaQuery } from '@material-ui/core'
@@ -41,9 +40,10 @@ const createCustomTheme = ({ darkMode }: any) =>
   }
 );
 
-function PageShell({ children, pageContext }: { children: React.ReactNode; pageContext: PageContext }) {
+function PageShell({ children, pageContext }: { children: React.ReactNode; pageContext: CustomPageContext }) {
   const darkMode = useMediaQuery("(prefers-color-scheme: dark)");
   const theme = React.useMemo(() => createCustomTheme({ darkMode }), [darkMode]);
+  
 
   return (
     <React.StrictMode>

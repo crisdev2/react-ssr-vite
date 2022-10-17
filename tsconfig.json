@@ -13,7 +13,8 @@
   "ts-node": {
     "transpileOnly": true,
     "compilerOptions": {
-      "module": "CommonJS"
+      "module": "CommonJS",
+      "lib": ["es2021", "dom"]
     }
   }
 }
